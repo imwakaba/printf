@@ -64,3 +64,4 @@ void _write(buffer *b_r, char c);
 void _write_str(buffer *b_r, char *s);
 void _write_tmpbuf(buffer *b_r);
 #endif
+
