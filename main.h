@@ -7,7 +7,8 @@
 #include <unistd.h>
 #include <stddef.h>
 /**
- * struct operation - a structure containing a char to compare with format specifiers.
+ * struct operation - a structure containing a
+ * char to compare with format specifiers.
  * and then choose the right function when it matches
  * @op: the char we want to compare to
  * @func: the address of the function we want to return if a char matches
