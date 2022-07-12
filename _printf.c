@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+<<<<<<< HEAD
  * _printf - prints anything
  * @format: the format string
  *
@@ -12,6 +13,16 @@ int _printf(const char *format, ...)
 	va_list ap;
 	char *p, *start;
 	params_t params = PARAMS_INIT;
+=======
+ * _printf - is a function that selects the correct function to print.
+ * @format: identifier to look for
+ * Return: the length of the string
+ */
+int _printf(const char *const format, ...)
+{
+	convert_match m[] = {
+		{"%s", printf_string}, {"%c", printf_char}, {"%%", printf_37}, {"%i", printf_int}, {"%d", printf_dec}, {"%r", printf_srev}, {"%R", printf_rot13}, {"%b", printf_bin}, {"%u", printf_unsigned}, {"%o", printf_oct}, {"%x", printf_hex}, {"%X", printf_HEX}, {"%S", printf_exclusive_string}, {"%p", printf_pointer}};
+>>>>>>> 7daa92ed173babcb15f1276a9ba801e8e68e0e74
 
 	va_start(ap, format);
 
