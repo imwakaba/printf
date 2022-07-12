@@ -2,7 +2,7 @@
 
 /**
  * print_char - prints character
- * @ap: argument pointer
+ * @ap: argument pointer.
  * @params: the parameters struct
  *
  * Return: number chars printed
